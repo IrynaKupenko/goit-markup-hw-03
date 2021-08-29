@@ -10,6 +10,23 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .list {
   list-style: none;
 }
@@ -17,7 +34,29 @@ body {
 .link {
   text-decoration: none;
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /*header*/
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
 
 .header-logo {
   font-weight: bold;
@@ -32,24 +71,44 @@ body {
 .web {
   color: var(--accent-color);
 }
+.header-list {
+  display: flex;
+}
 
-.header-link {
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
 
+.header-right {
+  display: flex;
+  margin-left: auto;
+}
+
 .header-mail {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--main-text-color);
 }
 .header-mail:hover,
@@ -58,10 +117,13 @@ body {
 }
 
 .header-tel {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--main-text-color);
 }
 
@@ -81,27 +143,34 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
   color: var(--secondary-title-color);
 }
 
 .hero {
+  padding: 200px 0px;
   background-color: var(--background-color);
+  margin: auto;
 }
 
 .hero-button {
+  display: block;
   max-width: 696px;
   margin: 0;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
   background: var(--accent-color);
 }
 
 .hero-button {
+  width: 200px;
+  height: 50px;
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--secondary-title-color);
 }
-
 /*section services*/
 
 .services-subtitle {
