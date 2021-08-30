@@ -50,6 +50,12 @@ ul {
   padding-bottom: 94px;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*header*/
 
 .header {
@@ -331,6 +337,9 @@ ul {
   margin-top: var(--possibilities-list-gap);
 }
 
+.ppossibilities-item {
+  width: 370px;
+}
 .possibilities-project {
   font-weight: bold;
   font-size: 18px;
@@ -347,7 +356,12 @@ ul {
   /* identical to box height, or 187% */
 
   letter-spacing: 0.03em;
+  margin-top: 4px;
   color: var(--main-text-color);
+}
+
+.card-text {
+  padding: 20px 24px 20px 24px;
 }
 
 /*footer*/
