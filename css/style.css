@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --background-color: #2f303a;
   --border-header: #ececec;
+  --possibilities-list-gap: 30px;
 }
 
 body {
@@ -282,6 +283,20 @@ ul {
 }
 /*portfolio-buttons*/
 
+.portfolio-button {
+  margin-right: 8px;
+}
+
+.portfolio-button:nth-child(5n) {
+  margin-right: 0;
+}
+
+.button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
 .item {
   font-size: 16px;
   line-height: 1.6;
@@ -301,6 +316,20 @@ ul {
 }
 
 /*portfolio-possibilities*/
+
+.possibilities-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--possibilities-list-gap));
+  margin-top: calc(-1 * var(--possibilities-list-gap));
+}
+
+.possibilities-list > .possibilities-item {
+  flex-basis: calc(100% / 3 - var(--possibilities-list-gap));
+
+  margin-left: var(--possibilities-list-gap);
+  margin-top: var(--possibilities-list-gap);
+}
 
 .possibilities-project {
   font-weight: bold;
