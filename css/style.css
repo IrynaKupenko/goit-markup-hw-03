@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --background-color: #2f303a;
   --border-header: #ececec;
+  --border-portfolio-item: #eeeeee;
   --possibilities-list-gap: 30px;
 }
 
@@ -337,8 +338,11 @@ ul {
   margin-top: var(--possibilities-list-gap);
 }
 
-.ppossibilities-item {
+.possibilities-item {
   width: 370px;
+  border-left: 1px solid var(--border-portfolio-item);
+  border-bottom: 1px solid var(--border-portfolio-item);
+  border-right: 1px solid var(--border-portfolio-item);
 }
 .possibilities-project {
   font-weight: bold;
