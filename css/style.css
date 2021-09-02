@@ -45,7 +45,9 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
-
+.section > .services {
+  padding-bottom: 0px;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -106,6 +108,7 @@ ul {
   color: var(--main-title-color);
 }
 .header-link {
+  color: var(--main-title-color);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -173,6 +176,7 @@ ul {
 }
 
 .hero-button {
+  border: none;
   display: block;
   max-width: 696px;
   margin: 0;
@@ -185,10 +189,14 @@ ul {
 .hero-button {
   width: 200px;
   height: 50px;
-  background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--secondary-title-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: #188ce8;
 }
 /*section services*/
 
@@ -246,6 +254,10 @@ ul {
 
 /*team*/
 
+.section-team {
+  background: #f5f4fa;
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.16;
@@ -282,7 +294,12 @@ ul {
   color: var(--main-text-color);
 }
 .team-list .team-item {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   margin-right: 30px;
+  background: var(--secondary-title-color);
 }
 
 .team-item:nth-child(4n) {
@@ -305,6 +322,8 @@ ul {
 }
 
 .item {
+  border: none;
+  padding: 6px 22px;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
